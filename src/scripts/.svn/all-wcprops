@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/3/trunk/scripts
+END
+find_redis
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/3/trunk/scripts/find_redis
+END
+find_fichier
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/3/trunk/scripts/find_fichier
+END

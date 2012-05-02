@@ -1,0 +1,30 @@
+#!/bin/bash
+
+clear
+echo "############################################################"
+echo "########### Recherche dans un dictionnaire Redis ###########"
+echo "############################################################"
+echo ""
+echo "Opération : Rechercher une clé à partir de son empreinte"
+#echo "  1: Rechercher une empreinte, à partir de sa clé"
+#echo "  2: Rechercher une clé, à partir de son empreinte"
+#read -p '> ' operation
+#echo -e "\n"
+
+echo "Sur quel dictionnaire voulez-vous procéder la recherche ?"
+echo " 0: SUM"
+echo " 1: CK"
+echo " 2: MD5"
+echo " 3: SHA1"
+echo " 4: SHA224"
+echo " 5: SHA256"
+echo " 6: SHA384"
+echo " 7: SHA512"
+echo " 8: MD5 Natif"
+read -p '> '  dico
+echo ""
+
+read -p "Saisissez l'empreinte : " cle
+res=$((echo -en "SELECT $dico\r\nSMEMBERS $cle\r\n"; sleep 1) | nc localhost 6379 | tail -n 1)
+
+echo -e "\n=> Résultat = $res\n"

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+clear
+echo "##############################################################"
+echo "########### Recherche dans un dictionnaire Fichier ###########"
+echo "##############################################################"
+echo ""
+echo "Quelle opération souhaitez-vous effectuer"
+echo "  1: Rechercher une empreinte, à partir de sa clé"
+echo "  2: Rechercher une clé, à partir de son empreinte"
+read -p '> ' operation
+echo -e "\n"
+
+echo "Sur quel dictionnaire voulez-vous procéder la recherche ?"
+echo " 0: SUM"
+echo " 1: CK"
+echo " 2: MD5"
+echo " 3: SHA1"
+echo " 4: SHA224"
+echo " 5: SHA256"
+echo " 6: SHA384"
+echo " 7: SHA512"
+echo " 8: MD5 Natif"
+read -p '> '  dico
+echo ""
+
+if [ $operation = '1' ]
+then
+    read -p 'Saisissez la clé : ' cle
+    res=$(egrep ^$cle[[:blank:]] $dico.hash | tr '\t' ' ' | cut -d ' ' -f 2)
+    echo -e "\n => Emprunte de $cle = $res\n"
+
+else
+    read -p "Saisissez l'empreinte : " empreinte
+    res=$(egrep [[:blank:]]$empreinte$ $dico.hash | tr '\t' ' ' | cut -d ' ' -f 1)
+    echo -e "\n => Clé liée à l'empreinte $empreinte = $res\n"
+fi

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>colors.h</itemPath>
+      <itemPath>enums.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <logicalFolder name="f6"
+                     displayName="cpptestclass"
+                     projectFiles="true"
+                     kind="SOURCE_LOGICAL_FOLDER">
+        <itemPath>TestBruteForce.cpp</itemPath>
+        <itemPath>TestBruteForce.h</itemPath>
+        <itemPath>TestDriverRedis.cpp</itemPath>
+        <itemPath>TestHasheurCmd.cpp</itemPath>
+        <itemPath>TestHasheurCmd.h</itemPath>
+        <itemPath>TestHasheurMd5.cpp</itemPath>
+        <itemPath>TestHasheurMd5.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3"
+                     displayName="drivers"
+                     projectFiles="true"
+                     kind="SOURCE_LOGICAL_FOLDER">
+        <itemPath>Redis.cpp</itemPath>
+        <itemPath>Redis.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4"
+                     displayName="hasheurs"
+                     projectFiles="true"
+                     kind="SOURCE_LOGICAL_FOLDER">
+        <itemPath>Hasheur.cpp</itemPath>
+        <itemPath>Hasheur.h</itemPath>
+        <itemPath>HasheurCmd.cpp</itemPath>
+        <itemPath>HasheurCmd.h</itemPath>
+        <itemPath>HasheurMd5.cpp</itemPath>
+        <itemPath>HasheurMd5.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5"
+                     displayName="patterns"
+                     projectFiles="true"
+                     kind="SOURCE_LOGICAL_FOLDER">
+        <itemPath>ObserverObservable.cpp</itemPath>
+        <itemPath>ObserverObservable.h</itemPath>
+        <itemPath>Singleton.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2"
+                     displayName="sorties"
+                     projectFiles="true"
+                     kind="SOURCE_LOGICAL_FOLDER">
+        <itemPath>Sortie.cpp</itemPath>
+        <itemPath>Sortie.h</itemPath>
+        <itemPath>SortieFichier.cpp</itemPath>
+        <itemPath>SortieFichier.h</itemPath>
+        <itemPath>SortieNull.cpp</itemPath>
+        <itemPath>SortieNull.h</itemPath>
+        <itemPath>SortieRedis.cpp</itemPath>
+        <itemPath>SortieRedis.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1"
+                     displayName="utils"
+                     projectFiles="true"
+                     kind="SOURCE_LOGICAL_FOLDER">
+        <itemPath>BenchmarkUtil.cpp</itemPath>
+        <itemPath>BenchmarkUtil.h</itemPath>
+        <itemPath>BruteForceUtil.cpp</itemPath>
+        <itemPath>BruteForceUtil.h</itemPath>
+        <itemPath>DessinerUtil.cpp</itemPath>
+        <itemPath>DessinerUtil.h</itemPath>
+        <itemPath>Log.cpp</itemPath>
+        <itemPath>Log.h</itemPath>
+        <itemPath>Md5ManuelUtil.cpp</itemPath>
+        <itemPath>Md5ManuelUtil.h</itemPath>
+      </logicalFolder>
+      <itemPath>Calculateur.cpp</itemPath>
+      <itemPath>Calculateur.h</itemPath>
+      <itemPath>CleValeur.cpp</itemPath>
+      <itemPath>CleValeur.h</itemPath>
+      <itemPath>Moteur.cpp</itemPath>
+      <itemPath>Moteur.h</itemPath>
+      <itemPath>Signaux.cpp</itemPath>
+      <itemPath>Signaux.h</itemPath>
+      <itemPath>Ui.cpp</itemPath>
+      <itemPath>Ui.h</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src-redis</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandLine>-Wall -W</commandLine>
+          <warningLevel>0</warningLevel>
+        </cTool>
+        <ccTool>
+          <commandLine>-Wall -W -DDEBUG=1</commandLine>
+          <warningLevel>0</warningLevel>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>libs/libhiredis.a</linkerLibFileItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibFileItem>libs/libcpptest.a</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <stripSymbols>true</stripSymbols>
+          <commandLine>-Wall -W -O2</commandLine>
+          <warningLevel>0</warningLevel>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+          <warningLevel>0</warningLevel>
+        </asmTool>
+        <linkerTool>
+          <stripSymbols>true</stripSymbols>
+          <linkerLibItems>
+            <linkerLibFileItem>libs/libhiredis.a</linkerLibFileItem>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibFileItem>libs/libcpptest.a</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

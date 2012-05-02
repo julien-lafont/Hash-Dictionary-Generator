@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/!svn/ver/3/trunk/hiredis
+END
+sds.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/3/trunk/hiredis/sds.h
+END
+fmacros.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/3/trunk/hiredis/fmacros.h
+END
+util.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/3/trunk/hiredis/util.h
+END
+async.h
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/3/trunk/hiredis/async.h
+END
+dict.c
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/3/trunk/hiredis/dict.c
+END
+net.c
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/3/trunk/hiredis/net.c
+END
+hiredis.c
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/3/trunk/hiredis/hiredis.c
+END
+dict.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/3/trunk/hiredis/dict.h
+END
+sds.c
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/3/trunk/hiredis/sds.c
+END
+net.h
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/3/trunk/hiredis/net.h
+END
+hiredis.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/3/trunk/hiredis/hiredis.h
+END
+async.c
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/3/trunk/hiredis/async.c
+END
