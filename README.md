@@ -22,3 +22,9 @@ _Le programme a été développé sur un environnement de type Debian (Ubuntu 10
 _Le programme ainsi que les librairies externes utilisées, n’ont été compilés et testés que sur cet environnement._
 
 Auteurs : Julien Lafont, Christophe N, Alexandre B et Djénéba D (EPSI 2011)
+
+## Licence
+
+Cette application est distribuée sous licence Creative Commons BY-NC-SA 3.0.
+
+http://creativecommons.org/licenses/by-nc-sa/3.0/
